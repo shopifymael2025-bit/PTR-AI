@@ -1,0 +1,19 @@
+/* ---- Bouton micro du Composer (dictée vocale) ---- */
+.mic-btn { color: var(--fg2); transition: color .15s, background-color .15s, transform .16s var(--ease-spring), box-shadow .2s ease; }
+.mic-btn:hover { color: var(--fg); background-color: var(--bg3); transform: scale(1.08); }
+.mic-btn:active { transform: scale(0.9); transition-duration: .06s; }
+.mic-btn.mic-on { color: var(--accent-fg); background-image: var(--accent-grad); animation: mic-pulse 1.5s ease-out infinite; }
+.mic-btn.mic-on:hover { filter: brightness(1.06); }
+@keyframes mic-pulse { 0% { box-shadow: 0 0 0 0 rgba(96, 165, 250, 0.55); } 70%, 100% { box-shadow: 0 0 0 11px rgba(96, 165, 250, 0); } }
+
+/* trois barres animées pendant l'écoute */
+.mic-bars { display: flex; align-items: center; gap: 2px; height: 14px; }
+.mic-bars i { display: block; width: 2px; height: 100%; border-radius: 2px; background: currentColor; transform: scaleY(0.35); animation: mic-bar .9s ease-in-out infinite; }
+.mic-bars i:nth-child(2) { animation-delay: .15s; }
+.mic-bars i:nth-child(3) { animation-delay: .3s; }
+@keyframes mic-bar { 0%, 100% { transform: scaleY(0.3); } 50% { transform: scaleY(1); } }
+
+[data-motion='reduce'] .mic-btn, [data-motion='reduce'] .mic-bars i { transform: none !important; animation: none !important; }
+@media (prefers-reduced-motion: reduce) {
+  .mic-btn, .mic-bars i { animation: none !important; transform: none !important; transition: none !important; }
+}

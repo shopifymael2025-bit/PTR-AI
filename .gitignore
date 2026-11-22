@@ -1,0 +1,7 @@
+# Never commit dependencies, build output or local data
+node_modules/
+onyx/out/
+onyx/release/
+onyx/tests/e2e/shots/
+*.log
+.claude/
