@@ -146,7 +146,7 @@ export function SettingsModal() {
               <div className="flex items-center gap-4 py-4"><Logo size={36} /><div><div className="text-[13px] text-fg3 mono">v{String(info?.version ?? '')}</div><div className="text-fg2 text-[13px]">{t('tagline')}</div></div></div>
               <Row label={t('Version')}><span className="mono text-[12.5px]">{String(info?.version ?? '')}</span></Row>
               <Row label={t('Runtime')}><span className="mono text-[12px] text-fg2">Electron {String(info?.electron ?? '')} · Node {String(info?.node ?? '')}</span></Row>
-              <Row label={t('License')}><button className="text-[12.5px] underline underline-offset-2 hover:text-fg" onClick={() => invoke('app:openExternal', 'https://github.com/solarynteam/ptr-ai/blob/main/LICENSE')}>{t('Proprietary — all rights reserved')}</button></Row>
+              <Row label={t('License')}><button className="text-[12.5px] underline underline-offset-2 hover:text-fg" onClick={() => invoke('app:openExternal', 'https://github.com/shopifymael2025-bit/ptr-ai/blob/main/LICENSE')}>{t('Proprietary — all rights reserved')}</button></Row>
               <Row label={t('Terms of Service')} hint={s.tosAcceptedAt ? `${t('Accepted on')} ${new Date(s.tosAcceptedAt).toLocaleDateString(s.language === 'fr' ? 'fr-FR' : 'en-GB')} · v${s.tosAcceptedVersion ?? ''}` : undefined}><button className="btn-outline h-8" onClick={() => setShowTerms(true)}>{t('Read')}</button></Row>
               <UpdateSettings />
               <Row label={t('Diagnostics')}><button className="btn-outline h-8" onClick={async () => setDiag(await invoke('app:diagnostics'))}>{t('Run')}</button></Row>

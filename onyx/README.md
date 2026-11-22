@@ -21,7 +21,7 @@ published price is $0. PTR AI never promises that a cloud provider won't change 
 
 ## Install
 
-1. Download the latest installer from <https://github.com/solarynteam/onyx/releases/latest> (or run `release/PTR AI-Setup-<version>.exe` after `npm run dist`). The installer is not code-signed, so Windows SmartScreen may ask you to
+1. Download the latest installer from <https://github.com/shopifymael2025-bit/ptr-ai/releases/latest> (or run `release/PTR AI-Setup-<version>.exe` after `npm run dist`). The installer is not code-signed, so Windows SmartScreen may ask you to
    confirm (“More info → Run anyway”).
 2. Install [Ollama for Windows](https://ollama.com/download/windows) for free local models, start it, then in PTR AI's
    onboarding pick **Ollama** and download a model (e.g. `qwen2.5-coder:7b`, which supports tool calling).
@@ -40,7 +40,7 @@ tells you when it's the cause. For unlimited free use, use a local Ollama model.
 
 ## Auto-updates
 
-PTR AI checks <https://github.com/solarynteam/onyx/releases> at launch and every 6 hours, downloads new versions in the background (verified against the SHA-512 in `latest.yml`) and installs them when you click **Restart to update**. The source is fixed in the code (`OFFICIAL_UPDATE_URL` in `src/main/services/updater.ts`) and cannot be changed from the app. To publish a version, see `PUBLIER-SUR-GITHUB.md`.
+PTR AI checks <https://github.com/shopifymael2025-bit/ptr-ai/releases> at launch and every 6 hours, downloads new versions in the background (verified against the SHA-512 in `latest.yml`) and installs them when you click **Restart to update**. The source is fixed in the code (`OFFICIAL_UPDATE_URL` in `src/main/services/updater.ts`) and cannot be changed from the app. To publish a version, see `PUBLIER-SUR-GITHUB.md`.
 
 ## Features
 

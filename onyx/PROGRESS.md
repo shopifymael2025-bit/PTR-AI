@@ -35,7 +35,7 @@ Ollama `/api/chat`, `/api/tags`, `/api/show`, `/api/pull`, `/api/delete` and Ope
 
 ## v1.2.2 (2026-11-21)
 
-- Update feed fixed in code to `https://github.com/solarynteam/onyx/releases/latest/download` (`OFFICIAL_UPDATE_URL`); the setting and its UI field are gone, so the source cannot be changed from the app. Only a localhost feed can be injected, for tests (`ONYX_TEST_UPDATE_URL`).
+- Update feed fixed in code to `https://github.com/shopifymael2025-bit/ptr-ai/releases/latest/download` (`OFFICIAL_UPDATE_URL`); the setting and its UI field are gone, so the source cannot be changed from the app. Only a localhost feed can be injected, for tests (`ONYX_TEST_UPDATE_URL`).
 - Version is read only from `package.json` (app, onboarding, installer name, site). Docs no longer hard-code version numbers.
 - Download website in `../site/index.html`: EN/FR, live version, size and direct `.exe` link from the GitHub API, falling back to the releases page.
 - Verified on the packaged 1.2.2: the real GitHub feed is read (1.2.1 is older, so the app reports up to date); the simulated 9.9.9 update downloads and is verified. Smoke e2e failed once in a 4-test run, then passed twice on rerun.

@@ -67,7 +67,7 @@
     "publish": [
       {
         "provider": "github",
-        "owner": "solarynteam",
+        "owner": "shopifymael2025-bit",
         "repo": "ptr-ai",
         "releaseType": "release"
       }

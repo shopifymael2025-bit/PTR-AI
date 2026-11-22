@@ -1,7 +1,7 @@
 // Constants shared by the main process and the UI.
 
 /** GitHub repository that publishes PTR AI releases (installers + latest.yml). Change it here only. */
-export const GITHUB_REPO = 'solarynteam/ptr-ai'
+export const GITHUB_REPO = 'shopifymael2025-bit/ptr-ai'
 export const REPO_URL = `https://github.com/${GITHUB_REPO}`
 export const RELEASES_URL = `${REPO_URL}/releases`
 export const LATEST_RELEASE_URL = `${REPO_URL}/releases/latest`

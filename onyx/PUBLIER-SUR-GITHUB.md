@@ -1,6 +1,6 @@
 # Publier PTR AI (.exe Windows + .dmg macOS) sur GitHub — gratuit
 
-Dépôt : **https://github.com/solarynteam/ptr-ai** (doit être **public** pour que les mises à jour obligatoires fonctionnent).
+Dépôt : **https://github.com/shopifymael2025-bit/ptr-ai** (doit être **public** pour que les mises à jour obligatoires fonctionnent).
 
 GitHub construit **les deux installeurs tout seul** (robots dans `.github/workflows/`) dès que tu publies une release :
 
@@ -15,7 +15,7 @@ GitHub construit **les deux installeurs tout seul** (robots dans `.github/workfl
 git init -b main
 git add .
 git commit -m "PTR AI"
-git remote add origin https://github.com/solarynteam/ptr-ai.git
+git remote add origin https://github.com/shopifymael2025-bit/ptr-ai.git
 git push -u origin main
 ```
 
@@ -36,7 +36,7 @@ L'adresse des mises à jour est écrite dans le code (`GITHUB_REPO` dans `onyx/s
 
 ## 4. Site (GitHub Pages)
 
-**Settings → Pages** → Source : *Deploy from a branch* → `main` → dossier `/docs`. Site : https://solarynteam.github.io/ptr-ai/ — il lit tout seul la dernière release.
+**Settings → Pages** → Source : *Deploy from a branch* → `main` → dossier `/docs`. Site : https://shopifymael2025-bit.github.io/ptr-ai/ — il lit tout seul la dernière release.
 
 ## 5. Mac : premier lancement
 
