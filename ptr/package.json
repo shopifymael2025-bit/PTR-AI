@@ -1,7 +1,7 @@
 {
   "name": "ptr-ai",
   "productName": "PTR AI",
-  "version": "1.0.0",
+  "version": "1.4.1",
   "description": "PTR AI — A local-first AI coding agent for Windows and macOS.",
   "main": "./out/main/index.js",
   "author": "PTR AI",
