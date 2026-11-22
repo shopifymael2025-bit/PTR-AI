@@ -3,7 +3,7 @@
 **A free, local-first AI coding agent for Windows and macOS.**
 
 - **Download:** <https://shopifymael2025-bit.github.io/ptr-ai/> or the [latest release](https://github.com/shopifymael2025-bit/PTR-AI/releases/latest)
-- **App source:** [`onyx/`](onyx/) (Electron + React + TypeScript). See [`onyx/README.md`](onyx/README.md)
+- **App source:** [`ptr/`](ptr/) (Electron + React + TypeScript). See [`ptr/README.md`](onyx/README.md)
 - **Website:** [`docs/`](docs/) (served by GitHub Pages)
 - **Builds:** made by GitHub Actions on each release ([`release-windows.yml`](.github/workflows/release-windows.yml) and [`release-macos.yml`](.github/workflows/release-macos.yml))
 
