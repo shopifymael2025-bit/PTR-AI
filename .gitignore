@@ -5,3 +5,4 @@ ptr/release/
 ptr/tests/e2e/shots/
 *.log
 .claude/
+.DS_Store
