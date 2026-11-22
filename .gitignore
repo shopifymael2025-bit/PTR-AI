@@ -1,0 +1,7 @@
+# Never commit dependencies, build output or local data
+node_modules/
+ptr/out/
+ptr/release/
+ptr/tests/e2e/shots/
+*.log
+.claude/

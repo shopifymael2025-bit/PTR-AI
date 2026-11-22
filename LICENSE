@@ -1,0 +1,41 @@
+PTR — Proprietary License
+
+Copyright (c) 2026 PTR Corporation (github.com/shopifymael2025-bit). All rights reserved.
+
+The source code of PTR is published for transparency only. It is NOT open source.
+
+1. PERMITTED
+
+You may download, install and use the official PTR application, as distributed at  
+https://github.com/shopifymael2025-bit/PTR-AI and its official releases, free of charge, for personal or commercial work. You may read the source code.
+
+2. FORBIDDEN — without prior written permission from the copyright holder, you may not:
+
+a) copy, fork for redistribution, modify, translate, adapt or create derivative works
+   of PTR or any part of its source code, design, user interface, logo or website;
+
+b) build, publish, sell or distribute any application, product or service that copies,
+   imitates or is substantially based on PTR, its code, its interface or its design;
+
+c) redistribute, sublicense, rent or sell PTR or any part of it;
+
+d) remove or alter copyright notices, the PTR name or the PTR logo;
+
+e) use the PTR name or logo for another product.
+
+3. THIRD-PARTY COMPONENTS
+
+PTR may include open-source libraries or third-party components. Each remains under
+its own license; this license does not restrict them.
+
+4. NO WARRANTY
+
+PTR is provided "as is", without warranty of any kind. The copyright holder is not
+liable for any damage arising from its use.
+
+5. TERMINATION
+
+Any breach of section 2 automatically ends your right to use PTR.
+
+For permission requests:
+https://github.com/shopifymael2025-bit/PTR-AI/issues

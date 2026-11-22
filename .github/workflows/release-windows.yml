@@ -1,0 +1,65 @@
+# Builds the Windows installer of PTR AI on GitHub's Windows machines and attaches it to the release.
+# Trigger: publishing a GitHub release (tag like v1.4.0), or manually from the Actions tab.
+# Produces PTR-AI-Setup-<version>.exe (+ .blockmap) and latest.yml (used by PTR AI to detect new versions).
+name: Release Windows
+
+on:
+  release:
+    types: [published]
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: Release tag to build and upload to (e.g. v1.4.0)
+        required: true
+
+permissions:
+  contents: write
+
+env:
+  TAG: ${{ github.event.release.tag_name || inputs.tag }}
+
+jobs:
+  build:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    defaults:
+      run:
+        working-directory: ptr
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: ptr/package-lock.json
+
+      - name: Check that the tag matches package.json
+        run: |
+          PKG=$(node -p "require('./package.json').version")
+          TAGV=$(echo "$TAG" | sed -E 's/^[vV]//')
+          if [ "$PKG" != "$TAGV" ]; then echo "::error::Tag $TAG does not match package.json version $PKG"; exit 1; fi
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Type check and tests
+        run: |
+          npx tsc --noEmit -p tsconfig.json
+          npx vitest run
+
+      - name: Build app
+        run: |
+          npm run icons
+          npx electron-vite build
+
+      - name: Package (Windows x64)
+        run: npx electron-builder --win --x64 --publish never
+
+      - name: Upload to the release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          ls -la release
+          gh release upload "$TAG" release/*.exe release/*.blockmap release/latest.yml --clobber
